@@ -1,0 +1,15 @@
+<h2>My playlist will eventually go here</h2>
+<table class="table table-hover">
+    <thead>
+        <td>ID</td>
+        <td>Title</td>
+        <td>Description</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="#v of videos" (click)="onSelect(v)">
+            <td>{{v.id}}</td>
+            <td>{{v.title}}</td>
+            <td>{{v.desc}}</td>
+        </tr>
+    </tbody>
+</table>
